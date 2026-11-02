@@ -107,7 +107,12 @@ npm run audit
 
 ## Репозиторий и публикация
 
-Проект подготовлен отдельно от КР №1 под именем `kr3-responsive-shop`. Для сдачи в СДО требуется ссылка на отдельный репозиторий GitHub. После публикации через GitHub Pages сюда добавляется фактический адрес сайта.
+Проект размещается отдельно от КР №1.
+
+- Репозиторий для сдачи в СДО: [keepmeinyourmind/kr3-responsive-shop](https://github.com/keepmeinyourmind/kr3-responsive-shop).
+- Опубликованный сайт: [TechBox — GitHub Pages](https://keepmeinyourmind.github.io/kr3-responsive-shop/).
+
+GitHub Pages использует ветку `main` и корень репозитория. Файл `.nojekyll` позволяет публиковать готовые HTML/CSS-файлы без обработки Jekyll.
 
 ## Автор
 

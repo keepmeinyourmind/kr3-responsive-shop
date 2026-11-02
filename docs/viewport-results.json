@@ -1,0 +1,482 @@
+[
+  {
+    "page": "catalog.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "288px"
+  },
+  {
+    "page": "contacts.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "index.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "288px"
+  },
+  {
+    "page": "order.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-2.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-3.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-4.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-5.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-6.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "catalog.html",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "328px"
+  },
+  {
+    "page": "contacts.html",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "index.html",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "328px"
+  },
+  {
+    "page": "order.html",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-2.html",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-3.html",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-4.html",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-5.html",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-6.html",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product.html",
+    "width": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "catalog.html",
+    "width": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "398px"
+  },
+  {
+    "page": "contacts.html",
+    "width": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "index.html",
+    "width": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "398px"
+  },
+  {
+    "page": "order.html",
+    "width": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-2.html",
+    "width": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-3.html",
+    "width": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-4.html",
+    "width": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-5.html",
+    "width": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-6.html",
+    "width": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product.html",
+    "width": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "catalog.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "352px 352px"
+  },
+  {
+    "page": "contacts.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "index.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "352px 352px"
+  },
+  {
+    "page": "order.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-2.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-3.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-4.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-5.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-6.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "catalog.html",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "348px 348px"
+  },
+  {
+    "page": "contacts.html",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "index.html",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "314.656px 314.672px 314.656px"
+  },
+  {
+    "page": "order.html",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-2.html",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-3.html",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-4.html",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-5.html",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-6.html",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product.html",
+    "width": 1024,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "catalog.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "268px 268px 268px"
+  },
+  {
+    "page": "contacts.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "index.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "356px 356px 356px"
+  },
+  {
+    "page": "order.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-2.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-3.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-4.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-5.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product-6.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  },
+  {
+    "page": "product.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "columns": "none"
+  }
+]

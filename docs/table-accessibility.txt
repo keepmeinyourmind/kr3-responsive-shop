@@ -1,0 +1,31 @@
+- 'table "Характеристики: iPhone 17 Pro Max"':
+  - caption: "Характеристики: iPhone 17 Pro Max"
+  - rowgroup:
+    - row "Параметр Значение":
+      - columnheader "Параметр"
+      - columnheader "Значение"
+  - rowgroup:
+    - row "Артикул TB-PH-001":
+      - rowheader "Артикул"
+      - cell "TB-PH-001"
+    - row "Категория Смартфоны":
+      - rowheader "Категория"
+      - cell "Смартфоны"
+    - row "Экран 6,9\" OLED, 120 Гц":
+      - rowheader "Экран"
+      - cell "6,9\" OLED, 120 Гц"
+    - row "Процессор A19 Pro":
+      - rowheader "Процессор"
+      - cell "A19 Pro"
+    - row "Камера Тройная, 48 Мп":
+      - rowheader "Камера"
+      - cell "Тройная, 48 Мп"
+    - row "Память 256 ГБ":
+      - rowheader "Память"
+      - cell "256 ГБ"
+    - row "Цвет Космический оранжевый":
+      - rowheader "Цвет"
+      - cell "Космический оранжевый"
+    - row "Гарантия 12 месяцев":
+      - rowheader "Гарантия"
+      - cell "12 месяцев"

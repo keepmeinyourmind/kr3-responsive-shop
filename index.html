@@ -7,9 +7,11 @@
   <title>TechBox — магазин техники и гаджетов</title>
   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js?v=kr1-original" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">
@@ -44,7 +46,7 @@
     </div>
   </header>
 
-  <main class="page">
+  <main class="page" id="main" tabindex="-1">
     <section class="hero">
       <h1 class="hero__title">Техника, которая делает жизнь проще</h1>
       <p class="hero__text">
@@ -96,7 +98,10 @@
       <div class="products-grid">
         <article class="product-card product-card--featured">
           <span class="product-card__badge product-card__badge--hit">Хит</span>
-          <img class="product-card__image" src="images/product-1.jpg" alt="iPhone 17 Pro Max" width="400" height="300">
+          <picture>
+              <source type="image/webp" srcset="images/product-1-400.webp 400w, images/product-1-800.webp 800w" sizes="(min-width: 1148px) 332px, (min-width: 1024px) calc((100vw - 164px) / 3), (min-width: 640px) calc((100vw - 112px) / 2), calc(100vw - 66px)">
+              <img class="product-card__image" src="images/product-1-800.jpg" srcset="images/product-1-400.jpg 400w, images/product-1-800.jpg 800w" sizes="(min-width: 1148px) 332px, (min-width: 1024px) calc((100vw - 164px) / 3), (min-width: 640px) calc((100vw - 112px) / 2), calc(100vw - 66px)" alt="iPhone 17 Pro Max" width="800" height="600" decoding="async" loading="lazy">
+            </picture>
           <p class="product-card__category">Смартфоны</p>
           <h3 class="product-card__title">iPhone 17 Pro Max</h3>
           <p class="product-card__description">Экран 6,9" OLED 120 Гц, чип A19 Pro, тройная камера 48 Мп.</p>
@@ -110,7 +115,10 @@
         </article>
         <article class="product-card">
           <span class="product-card__badge product-card__badge--new">Новинка</span>
-          <img class="product-card__image" src="images/product-2.jpg" alt="MacBook Pro" width="400" height="300">
+          <picture>
+              <source type="image/webp" srcset="images/product-2-400.webp 400w, images/product-2-800.webp 800w" sizes="(min-width: 1148px) 332px, (min-width: 1024px) calc((100vw - 164px) / 3), (min-width: 640px) calc((100vw - 112px) / 2), calc(100vw - 66px)">
+              <img class="product-card__image" src="images/product-2-800.jpg" srcset="images/product-2-400.jpg 400w, images/product-2-800.jpg 800w" sizes="(min-width: 1148px) 332px, (min-width: 1024px) calc((100vw - 164px) / 3), (min-width: 640px) calc((100vw - 112px) / 2), calc(100vw - 66px)" alt="MacBook Pro" width="800" height="600" decoding="async" loading="lazy">
+            </picture>
           <p class="product-card__category">Ноутбуки</p>
           <h3 class="product-card__title">MacBook Pro</h3>
           <p class="product-card__description">Дисплей Liquid Retina XDR, чип Apple серии M, два цвета корпуса.</p>
@@ -124,7 +132,10 @@
         </article>
         <article class="product-card product-card--discount">
           <span class="product-card__badge product-card__badge--sale">Скидка</span>
-          <img class="product-card__image" src="images/product-3.jpg" alt="AirPods Max" width="400" height="300">
+          <picture>
+              <source type="image/webp" srcset="images/product-3-400.webp 400w, images/product-3-800.webp 800w" sizes="(min-width: 1148px) 332px, (min-width: 1024px) calc((100vw - 164px) / 3), (min-width: 640px) calc((100vw - 112px) / 2), calc(100vw - 66px)">
+              <img class="product-card__image" src="images/product-3-800.jpg" srcset="images/product-3-400.jpg 400w, images/product-3-800.jpg 800w" sizes="(min-width: 1148px) 332px, (min-width: 1024px) calc((100vw - 164px) / 3), (min-width: 640px) calc((100vw - 112px) / 2), calc(100vw - 66px)" alt="AirPods Max" width="800" height="600" decoding="async" loading="lazy">
+            </picture>
           <p class="product-card__category">Аудио</p>
           <h3 class="product-card__title">AirPods Max</h3>
           <p class="product-card__description">Активное шумоподавление, пространственное аудио, до 20 часов работы.</p>
@@ -143,7 +154,7 @@
       <h2 class="aside-info__title">О магазине</h2>
       <p class="aside-info__text">
         TechBox — учебный проект интернет-магазина техники. Сайт выполнен
-        в рамках контрольной работы №1 по дисциплине «Фронтенд и бэкенд разработка»:
+        в рамках контрольной работы №3 по дисциплине «Фронтенд и бэкенд разработка»:
         Flexbox, CSS Grid, БЭМ и CSS-переменные без CSS-фреймворков.
       </p>
     </aside>
@@ -184,9 +195,9 @@
 
       <div class="order-form__field">
         <label class="order-form__label" for="order-phone">Телефон</label>
-        <input class="order-form__input" id="order-phone" name="phone" type="tel" inputmode="tel"
+        <input class="order-form__input" id="order-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" aria-describedby="phone-hint"
           placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required>
-        <small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
+        <small class="order-form__hint" id="phone-hint">Формат: +7 (900) 000-00-00</small>
       </div>
 
       <div class="order-form__field">
@@ -204,7 +215,7 @@
         </select>
       </div>
 
-      <div class="order-form__field">
+      <div class="order-form__field order-form__field--wide">
         <label class="order-form__label" for="order-comment">Комментарий</label>
         <textarea class="order-form__textarea" id="order-comment" name="comment" rows="4"
           placeholder="Укажите дополнительную информацию"></textarea>
@@ -228,8 +239,6 @@
     </form>
   </dialog>
 
-  <p class="success-message" id="success-message" hidden>
-    Форма успешно отправлена!
-  </p>
+  <p class="success-message" id="success-message" role="status" hidden>Форма проверена. Учебный проект: данные не отправляются на сервер.</p>
 </body>
 </html>

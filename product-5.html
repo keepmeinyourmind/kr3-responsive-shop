@@ -7,8 +7,10 @@
   <title>iPad Pro — TechBox</title>
   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">
@@ -43,7 +45,7 @@
     </div>
   </header>
 
-  <main class="page">
+  <main class="page" id="main" tabindex="-1">
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <a class="breadcrumbs__link" href="index.html">Главная</a>
       <span class="breadcrumbs__separator" aria-hidden="true">—</span>
@@ -53,7 +55,10 @@
     </nav>
 
     <article class="product-detail">
-      <img class="product-detail__image" src="images/product-5.jpg" alt="iPad Pro" width="400" height="300">
+      <picture>
+              <source type="image/webp" srcset="images/product-5-400.webp 400w, images/product-5-800.webp 800w" sizes="(min-width: 1148px) 534px, (min-width: 768px) calc((100vw - 80px) / 2), calc(100vw - 32px)">
+              <img class="product-detail__image" src="images/product-5-800.jpg" srcset="images/product-5-400.jpg 400w, images/product-5-800.jpg 800w" sizes="(min-width: 1148px) 534px, (min-width: 768px) calc((100vw - 80px) / 2), calc(100vw - 32px)" alt="iPad Pro" width="800" height="600" decoding="async">
+            </picture>
       <div class="product-detail__info">
         <p class="product-detail__category">Планшеты</p>
         <h1 class="product-detail__title">iPad Pro</h1>
@@ -68,49 +73,51 @@
 
     <section class="section">
       <h2 class="section__title">Характеристики</h2>
-      <table class="product-table">
+      <div class="table-wrapper">
+      <table class="product-table" role="table">
         <caption class="product-table__caption">Характеристики: iPad Pro</caption>
-        <thead>
-          <tr>
-            <th class="product-table__head-cell" scope="col">Параметр</th>
-            <th class="product-table__head-cell" scope="col">Значение</th>
+        <thead role="rowgroup">
+          <tr role="row">
+            <th class="product-table__head-cell" scope="col" role="columnheader">Параметр</th>
+            <th class="product-table__head-cell" scope="col" role="columnheader">Значение</th>
           </tr>
         </thead>
-        <tbody>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Артикул</th>
-            <td class="product-table__cell">TB-TB-005</td>
+        <tbody role="rowgroup">
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Артикул</th>
+            <td class="product-table__cell" role="cell">TB-TB-005</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Категория</th>
-            <td class="product-table__cell">Планшеты</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Категория</th>
+            <td class="product-table__cell" role="cell">Планшеты</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Дисплей</th>
-            <td class="product-table__cell">Ultra Retina XDR</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Дисплей</th>
+            <td class="product-table__cell" role="cell">Ultra Retina XDR</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Процессор</th>
-            <td class="product-table__cell">Apple, серия M</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Процессор</th>
+            <td class="product-table__cell" role="cell">Apple, серия M</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Цвет</th>
-            <td class="product-table__cell">Чёрный космос</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Цвет</th>
+            <td class="product-table__cell" role="cell">Чёрный космос</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Стилус</th>
-            <td class="product-table__cell">Apple Pencil Pro</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Стилус</th>
+            <td class="product-table__cell" role="cell">Apple Pencil Pro</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Связь</th>
-            <td class="product-table__cell">Wi-Fi 6E</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Связь</th>
+            <td class="product-table__cell" role="cell">Wi-Fi 6E</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Гарантия</th>
-            <td class="product-table__cell">12 месяцев</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Гарантия</th>
+            <td class="product-table__cell" role="cell">12 месяцев</td>
           </tr>
         </tbody>
       </table>
+      </div>
     </section>
   </main>
 

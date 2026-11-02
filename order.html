@@ -7,9 +7,11 @@
   <title>Заявка — TechBox</title>
   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js?v=kr1-original" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">
@@ -44,7 +46,7 @@
     </div>
   </header>
 
-  <main class="page">
+  <main class="page" id="main" tabindex="-1">
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <a class="breadcrumbs__link" href="index.html">Главная</a>
       <span class="breadcrumbs__separator" aria-hidden="true">—</span>
@@ -70,9 +72,9 @@
 
         <div class="order-form__field">
           <label class="order-form__label" for="order-phone">Телефон</label>
-          <input class="order-form__input" id="order-phone" name="phone" type="tel" inputmode="tel"
+          <input class="order-form__input" id="order-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" aria-describedby="phone-hint"
             placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required>
-          <small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
+          <small class="order-form__hint" id="phone-hint">Формат: +7 (900) 000-00-00</small>
         </div>
 
         <div class="order-form__field">
@@ -98,7 +100,7 @@
           </select>
         </div>
 
-        <div class="order-form__field">
+        <div class="order-form__field order-form__field--wide">
           <label class="order-form__label" for="order-comment">Комментарий</label>
           <textarea class="order-form__textarea" id="order-comment" name="comment" rows="4"
             placeholder="Укажите дополнительную информацию"></textarea>
@@ -116,9 +118,7 @@
         </div>
       </form>
 
-      <p class="success-message" id="success-message" hidden>
-        Форма успешно отправлена!
-      </p>
+      <p class="success-message" id="success-message" role="status" hidden>Форма проверена. Учебный проект: данные не отправляются на сервер.</p>
     </section>
   </main>
 

@@ -7,8 +7,10 @@
   <title>Каталог техники — TechBox</title>
   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">
@@ -43,7 +45,7 @@
     </div>
   </header>
 
-  <main class="page">
+  <main class="page" id="main" tabindex="-1">
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <a class="breadcrumbs__link" href="index.html">Главная</a>
       <span class="breadcrumbs__separator" aria-hidden="true">—</span>
@@ -53,8 +55,7 @@
     <section class="section">
       <h1 class="section__title">Каталог техники</h1>
       <p>
-        Смартфоны, ноутбуки, аудио и умные устройства. Блок фильтров пока выполнен
-        как статическая разметка.
+        Смартфоны, ноутбуки, аудио и умные устройства. Фильтры представлены статической разметкой, как в КР №1.
       </p>
     </section>
 
@@ -105,7 +106,10 @@
         <div class="products-grid">
           <article class="product-card product-card--featured">
             <span class="product-card__badge product-card__badge--hit">Хит</span>
-            <img class="product-card__image" src="images/product-1.jpg" alt="iPhone 17 Pro Max" width="400" height="300">
+            <picture>
+              <source type="image/webp" srcset="images/product-1-400.webp 400w, images/product-1-800.webp 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)">
+              <img class="product-card__image" src="images/product-1-800.jpg" srcset="images/product-1-400.jpg 400w, images/product-1-800.jpg 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)" alt="iPhone 17 Pro Max" width="800" height="600" decoding="async" loading="lazy">
+            </picture>
             <p class="product-card__category">Смартфоны</p>
             <h3 class="product-card__title">iPhone 17 Pro Max</h3>
             <p class="product-card__description">Экран 6,9" OLED 120 Гц, чип A19 Pro, тройная камера 48 Мп.</p>
@@ -116,7 +120,10 @@
           </article>
           <article class="product-card">
             <span class="product-card__badge product-card__badge--new">Новинка</span>
-            <img class="product-card__image" src="images/product-2.jpg" alt="MacBook Pro" width="400" height="300">
+            <picture>
+              <source type="image/webp" srcset="images/product-2-400.webp 400w, images/product-2-800.webp 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)">
+              <img class="product-card__image" src="images/product-2-800.jpg" srcset="images/product-2-400.jpg 400w, images/product-2-800.jpg 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)" alt="MacBook Pro" width="800" height="600" decoding="async" loading="lazy">
+            </picture>
             <p class="product-card__category">Ноутбуки</p>
             <h3 class="product-card__title">MacBook Pro</h3>
             <p class="product-card__description">Дисплей Liquid Retina XDR, чип Apple серии M, два цвета корпуса.</p>
@@ -127,7 +134,10 @@
           </article>
           <article class="product-card product-card--discount">
             <span class="product-card__badge product-card__badge--sale">Скидка</span>
-            <img class="product-card__image" src="images/product-3.jpg" alt="AirPods Max" width="400" height="300">
+            <picture>
+              <source type="image/webp" srcset="images/product-3-400.webp 400w, images/product-3-800.webp 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)">
+              <img class="product-card__image" src="images/product-3-800.jpg" srcset="images/product-3-400.jpg 400w, images/product-3-800.jpg 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)" alt="AirPods Max" width="800" height="600" decoding="async" loading="lazy">
+            </picture>
             <p class="product-card__category">Аудио</p>
             <h3 class="product-card__title">AirPods Max</h3>
             <p class="product-card__description">Активное шумоподавление, пространственное аудио, до 20 часов работы.</p>
@@ -138,7 +148,10 @@
           </article>
           <article class="product-card">
             <span class="product-card__badge product-card__badge--new">Новинка</span>
-            <img class="product-card__image" src="images/product-4.jpg" alt="Apple Watch Series 10" width="400" height="300">
+            <picture>
+              <source type="image/webp" srcset="images/product-4-400.webp 400w, images/product-4-800.webp 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)">
+              <img class="product-card__image" src="images/product-4-800.jpg" srcset="images/product-4-400.jpg 400w, images/product-4-800.jpg 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)" alt="Apple Watch Series 10" width="800" height="600" decoding="async" loading="lazy">
+            </picture>
             <p class="product-card__category">Носимая электроника</p>
             <h3 class="product-card__title">Apple Watch Series 10</h3>
             <p class="product-card__description">Экран Always-On, датчики здоровья, защита от воды до 50 метров.</p>
@@ -148,7 +161,10 @@
             </div>
           </article>
           <article class="product-card">
-            <img class="product-card__image" src="images/product-5.jpg" alt="iPad Pro" width="400" height="300">
+            <picture>
+              <source type="image/webp" srcset="images/product-5-400.webp 400w, images/product-5-800.webp 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)">
+              <img class="product-card__image" src="images/product-5-800.jpg" srcset="images/product-5-400.jpg 400w, images/product-5-800.jpg 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)" alt="iPad Pro" width="800" height="600" decoding="async" loading="lazy">
+            </picture>
             <p class="product-card__category">Планшеты</p>
             <h3 class="product-card__title">iPad Pro</h3>
             <p class="product-card__description">Дисплей Ultra Retina XDR, чип Apple серии M, поддержка Apple Pencil Pro.</p>
@@ -159,7 +175,10 @@
           </article>
           <article class="product-card">
             <span class="product-card__badge product-card__badge--hit">Хит</span>
-            <img class="product-card__image" src="images/product-6.jpg" alt="HomePod" width="400" height="300">
+            <picture>
+              <source type="image/webp" srcset="images/product-6-400.webp 400w, images/product-6-800.webp 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)">
+              <img class="product-card__image" src="images/product-6-800.jpg" srcset="images/product-6-400.jpg 400w, images/product-6-800.jpg 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)" alt="HomePod" width="800" height="600" decoding="async" loading="lazy">
+            </picture>
             <p class="product-card__category">Аудио</p>
             <h3 class="product-card__title">HomePod</h3>
             <p class="product-card__description">Пространственный звук, голосовой помощник и управление умным домом.</p>

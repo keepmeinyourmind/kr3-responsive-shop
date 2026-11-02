@@ -7,8 +7,11 @@
   <title>Контакты — TechBox</title>
   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js?v=kr1-original" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">
@@ -43,7 +46,7 @@
     </div>
   </header>
 
-  <main class="page">
+  <main class="page" id="main" tabindex="-1">
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <a class="breadcrumbs__link" href="index.html">Главная</a>
       <span class="breadcrumbs__separator" aria-hidden="true">—</span>
@@ -54,8 +57,8 @@
       <h1 class="section__title">Контакты</h1>
       <p>Свяжитесь с нами любым удобным способом.</p>
       <ul class="contact-list">
-        <li class="contact-list__item">Телефон: +7 (900) 000-00-00</li>
-        <li class="contact-list__item">E-mail: info@techbox.example</li>
+        <li class="contact-list__item">Телефон: <a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+        <li class="contact-list__item">E-mail: <a href="mailto:info@techbox.example">info@techbox.example</a></li>
         <li class="contact-list__item">Адрес: г. Москва, ул. Учебная, д. 1 (учебный проект)</li>
         <li class="contact-list__item">Часы работы: ежедневно с 10:00 до 20:00</li>
       </ul>
@@ -68,10 +71,25 @@
 
     <section class="section" id="feedback">
       <h2 class="section__title">Обратная связь</h2>
-      <p>
-        Для отправки заявки перейдите на страницу заявки и заполните форму.
-      </p>
-      <a class="button button--primary" href="order.html">Перейти к форме</a>
+      <p id="feedback-note">Учебная форма: данные проверяются в браузере и не отправляются на сервер. Все поля обязательны.</p>
+      <form class="order-form" id="order-form" action="#feedback" method="post" aria-describedby="feedback-note" novalidate>
+        <div class="order-form__field">
+          <label class="order-form__label" for="feedback-name">Имя</label>
+          <input class="order-form__input" id="feedback-name" name="name" type="text" autocomplete="given-name" minlength="2" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="feedback-email">E-mail</label>
+          <input class="order-form__input" id="feedback-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="order-form__field order-form__field--wide">
+          <label class="order-form__label" for="feedback-comment">Сообщение</label>
+          <textarea class="order-form__textarea" id="feedback-comment" name="comment" rows="5" required></textarea>
+        </div>
+        <div class="order-form__actions">
+          <button class="button button--primary" type="submit">Проверить форму</button>
+        </div>
+      </form>
+      <p class="success-message" id="success-message" role="status" hidden>Форма проверена. Учебный проект: сообщение не отправлено на сервер.</p>
     </section>
   </main>
 

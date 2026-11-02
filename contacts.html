@@ -8,7 +8,7 @@
   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <script src="js/main.js" defer></script>
+  <script src="js/main.js?v=kr1-original" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к основному содержимому</a>
@@ -71,18 +71,18 @@
 
     <section class="section" id="feedback">
       <h2 class="section__title">Обратная связь</h2>
-      <p id="feedback-note">Учебная форма: данные проверяются в браузере и не отправляются на сервер. Поля со словом «обязательно» нужно заполнить.</p>
+      <p id="feedback-note">Учебная форма: данные проверяются в браузере и не отправляются на сервер. Все поля обязательны.</p>
       <form class="order-form" id="order-form" action="#feedback" method="post" aria-describedby="feedback-note" novalidate>
         <div class="order-form__field">
-          <label class="order-form__label" for="feedback-name">Имя (обязательно)</label>
+          <label class="order-form__label" for="feedback-name">Имя</label>
           <input class="order-form__input" id="feedback-name" name="name" type="text" autocomplete="given-name" minlength="2" required>
         </div>
         <div class="order-form__field">
-          <label class="order-form__label" for="feedback-email">E-mail (обязательно)</label>
+          <label class="order-form__label" for="feedback-email">E-mail</label>
           <input class="order-form__input" id="feedback-email" name="email" type="email" autocomplete="email" required>
         </div>
         <div class="order-form__field order-form__field--wide">
-          <label class="order-form__label" for="feedback-comment">Сообщение (обязательно)</label>
+          <label class="order-form__label" for="feedback-comment">Сообщение</label>
           <textarea class="order-form__textarea" id="feedback-comment" name="comment" rows="5" required></textarea>
         </div>
         <div class="order-form__actions">

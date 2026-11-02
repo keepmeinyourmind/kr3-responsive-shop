@@ -18,8 +18,7 @@
         <img class="site-header__logo-image" src="images/logo.svg" alt="" width="28" height="28">
         TechBox
       </a>
-      <button class="button button--secondary menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Открыть меню</button>
-      <nav id="site-navigation" class="site-nav" aria-label="Основная навигация">
+      <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
           <li class="site-nav__item">
             <a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a>
@@ -179,7 +178,7 @@
 
   <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
     <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
-    <form class="order-form" id="order-form" action="#" method="post">
+    <form class="order-form" id="order-form" action="#" method="post" novalidate>
       <input id="selected-product" name="selected-product" type="hidden">
 
       <div class="order-form__field">
@@ -240,6 +239,6 @@
     </form>
   </dialog>
 
-  <p class="success-message" id="success-message" role="status" tabindex="-1"></p>
+  <p class="success-message" id="success-message" role="status" hidden>Форма проверена. Учебный проект: данные не отправляются на сервер.</p>
 </body>
 </html>

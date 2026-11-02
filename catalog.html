@@ -8,7 +8,6 @@
   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <script src="js/main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к основному содержимому</a>
@@ -18,8 +17,7 @@
         <img class="site-header__logo-image" src="images/logo.svg" alt="" width="28" height="28">
         TechBox
       </a>
-      <button class="button button--secondary menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Открыть меню</button>
-      <nav id="site-navigation" class="site-nav" aria-label="Основная навигация">
+      <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
           <li class="site-nav__item">
             <a class="site-nav__link" href="index.html">Главная</a>
@@ -57,15 +55,13 @@
     <section class="section">
       <h1 class="section__title">Каталог техники</h1>
       <p>
-        Смартфоны, ноутбуки, аудио и умные устройства. Выберите категории и диапазон цен, чтобы найти подходящий товар.
+        Смартфоны, ноутбуки, аудио и умные устройства. Фильтры представлены статической разметкой, как в КР №1.
       </p>
     </section>
 
     <section class="catalog-layout">
       <aside class="catalog-filters">
         <h2 class="catalog-filters__title">Фильтры</h2>
-        <details class="catalog-filters__details" open>
-          <summary class="catalog-filters__toggle">Показать фильтры</summary>
         <form class="filters-form" action="#" method="get">
           <fieldset class="filters-form__group">
             <legend class="filters-form__legend">Категория</legend>
@@ -102,16 +98,13 @@
             <input class="filters-form__input" id="price-to" name="price-to" type="number" min="0" placeholder="60000">
           </fieldset>
           <button class="button button--primary" type="submit">Применить</button>
-          <button class="button button--secondary" type="reset">Сбросить</button>
         </form>
-        </details>
       </aside>
 
       <section class="catalog-products">
         <h2 class="catalog-products__title">Список товаров</h2>
-        <p class="catalog-status" role="status" aria-live="polite">Найдено товаров: 6</p>
         <div class="products-grid">
-          <article data-category="phones" class="product-card product-card--featured">
+          <article class="product-card product-card--featured">
             <span class="product-card__badge product-card__badge--hit">Хит</span>
             <picture>
               <source type="image/webp" srcset="images/product-1-400.webp 400w, images/product-1-800.webp 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)">
@@ -125,7 +118,7 @@
               <a class="button button--primary product-card__link" href="product.html">Подробнее</a>
             </div>
           </article>
-          <article data-category="laptops" class="product-card">
+          <article class="product-card">
             <span class="product-card__badge product-card__badge--new">Новинка</span>
             <picture>
               <source type="image/webp" srcset="images/product-2-400.webp 400w, images/product-2-800.webp 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)">
@@ -139,7 +132,7 @@
               <a class="button button--primary product-card__link" href="product-2.html">Подробнее</a>
             </div>
           </article>
-          <article data-category="audio" class="product-card product-card--discount">
+          <article class="product-card product-card--discount">
             <span class="product-card__badge product-card__badge--sale">Скидка</span>
             <picture>
               <source type="image/webp" srcset="images/product-3-400.webp 400w, images/product-3-800.webp 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)">
@@ -153,7 +146,7 @@
               <a class="button button--primary product-card__link" href="product-3.html">Подробнее</a>
             </div>
           </article>
-          <article data-category="wearables" class="product-card">
+          <article class="product-card">
             <span class="product-card__badge product-card__badge--new">Новинка</span>
             <picture>
               <source type="image/webp" srcset="images/product-4-400.webp 400w, images/product-4-800.webp 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)">
@@ -167,7 +160,7 @@
               <a class="button button--primary product-card__link" href="product-4.html">Подробнее</a>
             </div>
           </article>
-          <article data-category="tablets" class="product-card">
+          <article class="product-card">
             <picture>
               <source type="image/webp" srcset="images/product-5-400.webp 400w, images/product-5-800.webp 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)">
               <img class="product-card__image" src="images/product-5-800.jpg" srcset="images/product-5-400.jpg 400w, images/product-5-800.jpg 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)" alt="iPad Pro" width="800" height="600" decoding="async" loading="lazy">
@@ -180,7 +173,7 @@
               <a class="button button--primary product-card__link" href="product-5.html">Подробнее</a>
             </div>
           </article>
-          <article data-category="audio" class="product-card">
+          <article class="product-card">
             <span class="product-card__badge product-card__badge--hit">Хит</span>
             <picture>
               <source type="image/webp" srcset="images/product-6-400.webp 400w, images/product-6-800.webp 800w" sizes="(min-width: 1200px) 260px, (min-width: 1024px) 340px, (min-width: 640px) calc((100vw - 64px) / 2), calc(100vw - 64px)">

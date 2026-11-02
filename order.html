@@ -18,8 +18,7 @@
         <img class="site-header__logo-image" src="images/logo.svg" alt="" width="28" height="28">
         TechBox
       </a>
-      <button class="button button--secondary menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Открыть меню</button>
-      <nav id="site-navigation" class="site-nav" aria-label="Основная навигация">
+      <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
           <li class="site-nav__item">
             <a class="site-nav__link" href="index.html">Главная</a>
@@ -58,7 +57,7 @@
       <h1 class="section__title">Оформление заявки</h1>
       <p>Заполните форму, и мы свяжемся с вами. Обязательные поля нужно заполнить до отправки.</p>
 
-      <form class="order-form" id="order-form" action="#" method="post">
+      <form class="order-form" id="order-form" action="#" method="post" novalidate>
         <div class="order-form__field">
           <label class="order-form__label" for="order-name">Имя</label>
           <input class="order-form__input" id="order-name" name="name" type="text"
@@ -119,7 +118,7 @@
         </div>
       </form>
 
-      <p class="success-message" id="success-message" role="status" tabindex="-1"></p>
+      <p class="success-message" id="success-message" role="status" hidden>Форма проверена. Учебный проект: данные не отправляются на сервер.</p>
     </section>
   </main>
 

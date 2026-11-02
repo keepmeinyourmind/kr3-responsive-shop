@@ -8,7 +8,6 @@
   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <script src="js/main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к основному содержимому</a>
@@ -18,8 +17,7 @@
         <img class="site-header__logo-image" src="images/logo.svg" alt="" width="28" height="28">
         TechBox
       </a>
-      <button class="button button--secondary menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Открыть меню</button>
-      <nav id="site-navigation" class="site-nav" aria-label="Основная навигация">
+      <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
           <li class="site-nav__item">
             <a class="site-nav__link" href="index.html">Главная</a>
@@ -72,25 +70,10 @@
 
     <section class="section" id="feedback">
       <h2 class="section__title">Обратная связь</h2>
-      <p>Напишите нам. Форма учебная: данные проверяются только в браузере.</p>
-      <form class="order-form" id="feedback-form" action="#" method="post">
-        <div class="order-form__field">
-          <label class="order-form__label" for="feedback-name">Имя</label>
-          <input class="order-form__input" id="feedback-name" name="name" autocomplete="given-name" minlength="2" required>
-        </div>
-        <div class="order-form__field">
-          <label class="order-form__label" for="feedback-email">E-mail</label>
-          <input class="order-form__input" id="feedback-email" name="email" type="email" autocomplete="email" required>
-        </div>
-        <div class="order-form__field order-form__field--wide">
-          <label class="order-form__label" for="feedback-comment">Сообщение</label>
-          <textarea class="order-form__textarea" id="feedback-comment" name="comment" rows="4" required></textarea>
-        </div>
-        <div class="order-form__actions">
-          <button class="button button--primary" type="submit">Проверить сообщение</button>
-        </div>
-      </form>
-      <p class="success-message" id="success-message" role="status" tabindex="-1"></p>
+      <p>
+        Для отправки заявки перейдите на страницу заявки и заполните форму.
+      </p>
+      <a class="button button--primary" href="order.html">Перейти к форме</a>
     </section>
   </main>
 

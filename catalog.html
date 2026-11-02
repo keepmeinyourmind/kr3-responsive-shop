@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог техники TechBox: смартфоны, ноутбуки, аудио, умные часы и планшеты.">
+  <title>Каталог техники — TechBox</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">
+        <img class="site-header__logo-image" src="images/logo.svg" alt="" width="28" height="28">
+        TechBox
+      </a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Заявка</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#contacts">Обратная связь</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__separator" aria-hidden="true">—</span>
+      <span class="breadcrumbs__current">Каталог</span>
+    </nav>
+
+    <section class="section">
+      <h1 class="section__title">Каталог техники</h1>
+      <p>
+        Смартфоны, ноутбуки, аудио и умные устройства. Блок фильтров пока выполнен
+        как статическая разметка.
+      </p>
+    </section>
+
+    <section class="catalog-layout">
+      <aside class="catalog-filters">
+        <h2 class="catalog-filters__title">Фильтры</h2>
+        <form class="filters-form" action="#" method="get">
+          <fieldset class="filters-form__group">
+            <legend class="filters-form__legend">Категория</legend>
+            <label class="filters-form__label" for="filter-all">
+              <input type="checkbox" id="filter-all" name="category" value="all">
+              Все товары
+            </label>
+            <label class="filters-form__label" for="filter-phones">
+              <input type="checkbox" id="filter-phones" name="category" value="phones">
+              Смартфоны
+            </label>
+            <label class="filters-form__label" for="filter-laptops">
+              <input type="checkbox" id="filter-laptops" name="category" value="laptops">
+              Ноутбуки
+            </label>
+            <label class="filters-form__label" for="filter-audio">
+              <input type="checkbox" id="filter-audio" name="category" value="audio">
+              Аудио
+            </label>
+            <label class="filters-form__label" for="filter-wearables">
+              <input type="checkbox" id="filter-wearables" name="category" value="wearables">
+              Носимая электроника
+            </label>
+            <label class="filters-form__label" for="filter-tablets">
+              <input type="checkbox" id="filter-tablets" name="category" value="tablets">
+              Планшеты
+            </label>
+          </fieldset>
+          <fieldset class="filters-form__group">
+            <legend class="filters-form__legend">Цена,&nbsp;руб.</legend>
+            <label class="filters-form__label" for="price-from">От</label>
+            <input class="filters-form__input" id="price-from" name="price-from" type="number" min="0" placeholder="0">
+            <label class="filters-form__label" for="price-to">До</label>
+            <input class="filters-form__input" id="price-to" name="price-to" type="number" min="0" placeholder="60000">
+          </fieldset>
+          <button class="button button--primary" type="submit">Применить</button>
+        </form>
+      </aside>
+
+      <section class="catalog-products">
+        <h2 class="catalog-products__title">Список товаров</h2>
+        <div class="products-grid">
+          <article class="product-card product-card--featured">
+            <span class="product-card__badge product-card__badge--hit">Хит</span>
+            <img class="product-card__image" src="images/product-1.jpg" alt="iPhone 17 Pro Max" width="400" height="300">
+            <p class="product-card__category">Смартфоны</p>
+            <h3 class="product-card__title">iPhone 17 Pro Max</h3>
+            <p class="product-card__description">Экран 6,9" OLED 120 Гц, чип A19 Pro, тройная камера 48 Мп.</p>
+            <p class="product-card__price">139&nbsp;990&nbsp;руб.</p>
+            <div class="product-card__actions">
+              <a class="button button--primary product-card__link" href="product.html">Подробнее</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <span class="product-card__badge product-card__badge--new">Новинка</span>
+            <img class="product-card__image" src="images/product-2.jpg" alt="MacBook Pro" width="400" height="300">
+            <p class="product-card__category">Ноутбуки</p>
+            <h3 class="product-card__title">MacBook Pro</h3>
+            <p class="product-card__description">Дисплей Liquid Retina XDR, чип Apple серии M, два цвета корпуса.</p>
+            <p class="product-card__price">189&nbsp;990&nbsp;руб.</p>
+            <div class="product-card__actions">
+              <a class="button button--primary product-card__link" href="product-2.html">Подробнее</a>
+            </div>
+          </article>
+          <article class="product-card product-card--discount">
+            <span class="product-card__badge product-card__badge--sale">Скидка</span>
+            <img class="product-card__image" src="images/product-3.jpg" alt="AirPods Max" width="400" height="300">
+            <p class="product-card__category">Аудио</p>
+            <h3 class="product-card__title">AirPods Max</h3>
+            <p class="product-card__description">Активное шумоподавление, пространственное аудио, до 20 часов работы.</p>
+            <p class="product-card__price">54&nbsp;990&nbsp;руб. <span class="product-card__price-old">62&nbsp;990&nbsp;руб.</span></p>
+            <div class="product-card__actions">
+              <a class="button button--primary product-card__link" href="product-3.html">Подробнее</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <span class="product-card__badge product-card__badge--new">Новинка</span>
+            <img class="product-card__image" src="images/product-4.jpg" alt="Apple Watch Series 10" width="400" height="300">
+            <p class="product-card__category">Носимая электроника</p>
+            <h3 class="product-card__title">Apple Watch Series 10</h3>
+            <p class="product-card__description">Экран Always-On, датчики здоровья, защита от воды до 50 метров.</p>
+            <p class="product-card__price">44&nbsp;990&nbsp;руб.</p>
+            <div class="product-card__actions">
+              <a class="button button--primary product-card__link" href="product-4.html">Подробнее</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <img class="product-card__image" src="images/product-5.jpg" alt="iPad Pro" width="400" height="300">
+            <p class="product-card__category">Планшеты</p>
+            <h3 class="product-card__title">iPad Pro</h3>
+            <p class="product-card__description">Дисплей Ultra Retina XDR, чип Apple серии M, поддержка Apple Pencil Pro.</p>
+            <p class="product-card__price">109&nbsp;990&nbsp;руб.</p>
+            <div class="product-card__actions">
+              <a class="button button--primary product-card__link" href="product-5.html">Подробнее</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <span class="product-card__badge product-card__badge--hit">Хит</span>
+            <img class="product-card__image" src="images/product-6.jpg" alt="HomePod" width="400" height="300">
+            <p class="product-card__category">Аудио</p>
+            <h3 class="product-card__title">HomePod</h3>
+            <p class="product-card__description">Пространственный звук, голосовой помощник и управление умным домом.</p>
+            <p class="product-card__price">32&nbsp;990&nbsp;руб.</p>
+            <div class="product-card__actions">
+              <a class="button button--primary product-card__link" href="product-6.html">Подробнее</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__info">
+        <p class="site-footer__title">TechBox</p>
+        <p class="site-footer__text">Магазин техники и гаджетов</p>
+        <p class="site-footer__text"><a class="site-footer__link" href="contacts.html">Контакты</a></p>
+      </div>
+      <div class="site-footer__copy">
+        <p class="site-footer__text">&copy; 2026 TechBox. Учебный проект. Все права защищены.</p>
+        <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#">&uarr; Наверх</a>
+</body>
+</html>

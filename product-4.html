@@ -7,15 +7,19 @@
   <title>Apple Watch Series 10 — TechBox</title>
   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">
         <img class="site-header__logo-image" src="images/logo.svg" alt="" width="28" height="28">
         TechBox
       </a>
-      <nav class="site-nav" aria-label="Основная навигация">
+      <button class="button button--secondary menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Открыть меню</button>
+      <nav id="site-navigation" class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
           <li class="site-nav__item">
             <a class="site-nav__link" href="index.html">Главная</a>
@@ -43,7 +47,7 @@
     </div>
   </header>
 
-  <main class="page">
+  <main class="page" id="main" tabindex="-1">
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <a class="breadcrumbs__link" href="index.html">Главная</a>
       <span class="breadcrumbs__separator" aria-hidden="true">—</span>
@@ -53,7 +57,10 @@
     </nav>
 
     <article class="product-detail">
-      <img class="product-detail__image" src="images/product-4.jpg" alt="Apple Watch Series 10" width="400" height="300">
+      <picture>
+              <source type="image/webp" srcset="images/product-4-400.webp 400w, images/product-4-800.webp 800w" sizes="(min-width: 1148px) 534px, (min-width: 768px) calc((100vw - 80px) / 2), calc(100vw - 32px)">
+              <img class="product-detail__image" src="images/product-4-800.jpg" srcset="images/product-4-400.jpg 400w, images/product-4-800.jpg 800w" sizes="(min-width: 1148px) 534px, (min-width: 768px) calc((100vw - 80px) / 2), calc(100vw - 32px)" alt="Apple Watch Series 10" width="800" height="600" decoding="async">
+            </picture>
       <div class="product-detail__info">
         <p class="product-detail__category">Носимая электроника</p>
         <h1 class="product-detail__title">Apple Watch Series 10</h1>
@@ -68,49 +75,51 @@
 
     <section class="section">
       <h2 class="section__title">Характеристики</h2>
-      <table class="product-table">
+      <div class="table-wrapper">
+      <table class="product-table" role="table">
         <caption class="product-table__caption">Характеристики: Apple Watch Series 10</caption>
-        <thead>
-          <tr>
-            <th class="product-table__head-cell" scope="col">Параметр</th>
-            <th class="product-table__head-cell" scope="col">Значение</th>
+        <thead role="rowgroup">
+          <tr role="row">
+            <th class="product-table__head-cell" scope="col" role="columnheader">Параметр</th>
+            <th class="product-table__head-cell" scope="col" role="columnheader">Значение</th>
           </tr>
         </thead>
-        <tbody>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Артикул</th>
-            <td class="product-table__cell">TB-WR-004</td>
+        <tbody role="rowgroup">
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Артикул</th>
+            <td class="product-table__cell" role="cell">TB-WR-004</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Категория</th>
-            <td class="product-table__cell">Носимая электроника</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Категория</th>
+            <td class="product-table__cell" role="cell">Носимая электроника</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Корпус</th>
-            <td class="product-table__cell">Алюминий, розовое золото</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Корпус</th>
+            <td class="product-table__cell" role="cell">Алюминий, розовое золото</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Экран</th>
-            <td class="product-table__cell">Always-On Retina OLED</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Экран</th>
+            <td class="product-table__cell" role="cell">Always-On Retina OLED</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Датчики</th>
-            <td class="product-table__cell">Пульс, ЭКГ, кислород в крови</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Датчики</th>
+            <td class="product-table__cell" role="cell">Пульс, ЭКГ, кислород в крови</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Водозащита</th>
-            <td class="product-table__cell">до 50 метров</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Водозащита</th>
+            <td class="product-table__cell" role="cell">до 50 метров</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Автономность</th>
-            <td class="product-table__cell">до 18 часов</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Автономность</th>
+            <td class="product-table__cell" role="cell">до 18 часов</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Гарантия</th>
-            <td class="product-table__cell">12 месяцев</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Гарантия</th>
+            <td class="product-table__cell" role="cell">12 месяцев</td>
           </tr>
         </tbody>
       </table>
+      </div>
     </section>
   </main>
 

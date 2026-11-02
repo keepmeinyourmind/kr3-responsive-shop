@@ -16,3 +16,7 @@ Thumbs.db
 .env
 .env.*
 
+
+# Инструменты проверки
+node_modules/
+.playwright-cli/

@@ -7,15 +7,19 @@
   <title>iPhone 17 Pro Max — TechBox</title>
   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">
         <img class="site-header__logo-image" src="images/logo.svg" alt="" width="28" height="28">
         TechBox
       </a>
-      <nav class="site-nav" aria-label="Основная навигация">
+      <button class="button button--secondary menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Открыть меню</button>
+      <nav id="site-navigation" class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
           <li class="site-nav__item">
             <a class="site-nav__link" href="index.html">Главная</a>
@@ -43,7 +47,7 @@
     </div>
   </header>
 
-  <main class="page">
+  <main class="page" id="main" tabindex="-1">
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <a class="breadcrumbs__link" href="index.html">Главная</a>
       <span class="breadcrumbs__separator" aria-hidden="true">—</span>
@@ -53,7 +57,10 @@
     </nav>
 
     <article class="product-detail">
-      <img class="product-detail__image" src="images/product-1.jpg" alt="iPhone 17 Pro Max" width="400" height="300">
+      <picture>
+              <source type="image/webp" srcset="images/product-1-400.webp 400w, images/product-1-800.webp 800w" sizes="(min-width: 1148px) 534px, (min-width: 768px) calc((100vw - 80px) / 2), calc(100vw - 32px)">
+              <img class="product-detail__image" src="images/product-1-800.jpg" srcset="images/product-1-400.jpg 400w, images/product-1-800.jpg 800w" sizes="(min-width: 1148px) 534px, (min-width: 768px) calc((100vw - 80px) / 2), calc(100vw - 32px)" alt="iPhone 17 Pro Max" width="800" height="600" decoding="async">
+            </picture>
       <div class="product-detail__info">
         <p class="product-detail__category">Смартфоны</p>
         <h1 class="product-detail__title">iPhone 17 Pro Max</h1>
@@ -68,49 +75,51 @@
 
     <section class="section">
       <h2 class="section__title">Характеристики</h2>
-      <table class="product-table">
+      <div class="table-wrapper">
+      <table class="product-table" role="table">
         <caption class="product-table__caption">Характеристики: iPhone 17 Pro Max</caption>
-        <thead>
-          <tr>
-            <th class="product-table__head-cell" scope="col">Параметр</th>
-            <th class="product-table__head-cell" scope="col">Значение</th>
+        <thead role="rowgroup">
+          <tr role="row">
+            <th class="product-table__head-cell" scope="col" role="columnheader">Параметр</th>
+            <th class="product-table__head-cell" scope="col" role="columnheader">Значение</th>
           </tr>
         </thead>
-        <tbody>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Артикул</th>
-            <td class="product-table__cell">TB-PH-001</td>
+        <tbody role="rowgroup">
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Артикул</th>
+            <td class="product-table__cell" role="cell">TB-PH-001</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Категория</th>
-            <td class="product-table__cell">Смартфоны</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Категория</th>
+            <td class="product-table__cell" role="cell">Смартфоны</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Экран</th>
-            <td class="product-table__cell">6,9" OLED, 120 Гц</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Экран</th>
+            <td class="product-table__cell" role="cell">6,9" OLED, 120 Гц</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Процессор</th>
-            <td class="product-table__cell">A19 Pro</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Процессор</th>
+            <td class="product-table__cell" role="cell">A19 Pro</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Камера</th>
-            <td class="product-table__cell">Тройная, 48 Мп</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Камера</th>
+            <td class="product-table__cell" role="cell">Тройная, 48 Мп</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Память</th>
-            <td class="product-table__cell">256 ГБ</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Память</th>
+            <td class="product-table__cell" role="cell">256 ГБ</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Цвет</th>
-            <td class="product-table__cell">Космический оранжевый</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Цвет</th>
+            <td class="product-table__cell" role="cell">Космический оранжевый</td>
           </tr>
-          <tr class="product-table__row">
-            <th class="product-table__row-head" scope="row">Гарантия</th>
-            <td class="product-table__cell">12 месяцев</td>
+          <tr class="product-table__row" role="row">
+            <th class="product-table__row-head" scope="row" role="rowheader">Гарантия</th>
+            <td class="product-table__cell" role="cell">12 месяцев</td>
           </tr>
         </tbody>
       </table>
+      </div>
     </section>
   </main>
 
